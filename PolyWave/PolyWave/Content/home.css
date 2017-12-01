@@ -1,0 +1,62 @@
+﻿.imageSlider {
+    margin-top: -30px;
+}
+
+.banner-image {
+    position: relative;
+    width: 102%;
+    height: 400px;
+    left: 0;
+    margin-top: -16px;
+    margin-left: -10px;
+}
+
+.gif-images h1 {
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #FFF;
+}
+
+.gif-images {
+    position: relative;
+    height: 600px;
+    margin: auto;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.displayed-gif {
+    padding: 10px;
+    margin-left: 20px;
+    padding-top: 10px;
+    width: 30%;
+    height: 350px;
+    float: left;
+    display: inline-block;
+    background-color: #000;
+}
+
+.audio-file {
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.audios {
+    width: 90%;
+    margin-left: 50px;
+    padding: 20px;
+    float: left;
+    display: inline-block;
+}
+
+.audio-title {
+    font-family: sans-serif;
+    text-align: center;
+    color: #FFF;
+    border-radius: 10px;
+}

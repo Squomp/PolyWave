@@ -1,0 +1,49 @@
+﻿.browse {
+    text-align: center;
+}
+
+.categoryButton {
+    border: 1px solid #000;
+    display: inline-block;
+    width: 5%;
+    max-width: 5%;
+    height: 10%;
+    padding: 2%;
+    overflow: hidden;
+    margin: auto;
+    transition: padding 2s;
+}
+
+    /*.descEnd {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}*/
+
+.categoryButton:hover, .categoryButton:active {
+    padding: 3%;
+    background-color: #ffa800;
+}
+
+.categoryName {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.categoryDesc {
+    margin: 0% -10%;
+}
+
+.categoryImage {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 20px;
+    height:20px;
+}
+
+#content-holder {
+    width:100%;
+    display: inline-block;
+    margin: 10px 2%;
+}

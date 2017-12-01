@@ -1,0 +1,58 @@
+﻿@section link {
+    <link href="~/Content/Categorycss.css" rel="stylesheet" />
+}
+
+@section scripts {
+    <script src="~/Scripts/categoryScript.js"></script>
+}
+
+@{
+    ViewBag.Title = "Category Select";
+}
+
+<div class="browse">
+    <h1>Choose a Catergory</h1>
+</div>
+
+<div id="content-holder">
+    <div class="categoryButton" onclick="loadCategoryPage('Animals')">
+        <img src="~/Images/animal.jpg" class="catergoryImage" />
+        <div class="categoryName">Animals</div>
+    </div>
+    <div class="categoryButton" onclick="loadCategoryPage('Funny')">
+        <img src="~/Images/laughing-emoticon.jpg" class="catergoryImage" />
+        <div class="categoryName">Funny</div>
+    </div>
+    <div class="categoryButton" onclick="loadCategoryPage('Sports')">
+        <img src="~/Images/olumpic-sports.jpg" class="catergoryImage" />
+        <div class="categoryName">Sports</div>
+    </div>
+    <div class="categoryButton" onclick="loadCategoryPage('Music')">
+        <img src="~/Images/music.png" class="catergoryImage" />
+        <div class="categoryName">Music</div>
+    </div>
+    <div class="categoryButton" onclick="loadCategoryPage('Gaming')">
+        <img src="~/Images/game.jpg" class="catergoryImage" />
+        <div class="categoryName">Gaming</div>
+    </div>
+    <div class="categoryButton" onclick="loadCategoryPage('News')">
+        <img src="~/Images/News-Briefs.png" class="catergoryImage" />
+        <div class="categoryName">News</div>
+    </div>
+    <div class="categoryButton" onclick="loadCategoryPage('NSFW')">
+        <img src="~/Images/nsfw.png" class="catergoryImage" />
+        <div class="categoryName">NSFW</div>
+    </div>
+    <div class="categoryButton" onclick="loadCategoryPage('TV')">
+        <img src="~/Images/TV.jpeg" class="catergoryImage" />
+        <div class="categoryName">TV</div>
+    </div>
+    <div class="categoryButton" onclick="loadCategoryPage('Anime')">
+        <img src="~/Images/goku.jpg" class="catergoryImage" />
+        <div class="categoryName">Anime</div>
+    </div>
+    <div class="categoryButton" onclick="loadCategoryPage('Movies')">
+        <img src="~/Images/movies.png" class="catergoryImage" />
+        <div class="categoryName">Movies</div>
+    </div>
+</div>

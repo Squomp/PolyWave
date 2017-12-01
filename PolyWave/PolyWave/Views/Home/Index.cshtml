@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@section link {
+    <link href="~/Content/home.css" rel="stylesheet" />
+}
+
+<div class="container">
+    <div class="imageSlider">
+        <img class="banner-image" src="~/Images/Memes.jpg" />
+        <img class="banner-image" src="~/Images/goku.jpg" />
+        <img class="banner-image" src="~/Images/nsfw.png" />
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("banner-image");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 5000); // Change image every 2 seconds
+        }
+    </script>
+    <br />
+    <br />
+    <div class="gif-images">
+        <h1>Enjoy all of these awesome gifs</h1>
+        <br />
+        <img class="displayed-gif" src="~/Gifs/Tom.gif" />
+        <img class="displayed-gif" src="~/Gifs/KungFuBaby.gif" />
+        <img class="displayed-gif" src="~/Gifs/Trump.gif" />
+        <img class="displayed-gif" src="~/Gifs/NoTime.gif" />
+        <img class="displayed-gif" src="~/Gifs/Roller.gif" />
+        <img class="displayed-gif" src="~/Gifs/Fail.gif" />
+    </div>
+    <div class="audio-file">
+        <h2 class="audio-title">Lucio Frog</h2>
+        <audio class="audios" controls>
+            <source src="~/Audio/Lucio.mp3" type="audio/mp3" />
+        </audio>
+        <h2 class="audio-title">When you try your best</h2>
+        <audio class="audios" controls>
+            <source src="~/Audio/Try.mp3" type="audio/mp3" />
+        </audio>
+        <h2 class="audio-title">Wombo Combo!!!!</h2>
+        <audio class="audios" controls>
+            <source src="~/Audio/Wombo.mp3" type="audio/mp3" />
+        </audio>
+    </div>
+</div>

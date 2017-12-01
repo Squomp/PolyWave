@@ -1,0 +1,21 @@
+C:\Users\Mitch\Documents\Team TEAM - Web Project\TeamTEAM\DBAndServiceLayer\MediaDAL\bin\Debug\MediaDAL.dll.config
+C:\Users\Mitch\Documents\Team TEAM - Web Project\TeamTEAM\DBAndServiceLayer\MediaDAL\bin\Debug\MediaDAL.dll
+C:\Users\Mitch\Documents\Team TEAM - Web Project\TeamTEAM\DBAndServiceLayer\MediaDAL\bin\Debug\MediaDAL.pdb
+C:\Users\Mitch\Documents\Team TEAM - Web Project\TeamTEAM\DBAndServiceLayer\MediaDAL\bin\Debug\EntityFramework.dll
+C:\Users\Mitch\Documents\Team TEAM - Web Project\TeamTEAM\DBAndServiceLayer\MediaDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mitch\Documents\Team TEAM - Web Project\TeamTEAM\DBAndServiceLayer\MediaDAL\bin\Debug\EntityFramework.xml
+C:\Users\Mitch\Documents\Team TEAM - Web Project\TeamTEAM\DBAndServiceLayer\MediaDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mitch\Documents\Team TEAM - Web Project\TeamTEAM\DBAndServiceLayer\MediaDAL\obj\Debug\MediaDAL.csprojResolveAssemblyReference.cache
+C:\Users\Mitch\Documents\Team TEAM - Web Project\TeamTEAM\DBAndServiceLayer\MediaDAL\obj\Debug\MediaDAL.dll
+C:\Users\Mitch\Documents\Team TEAM - Web Project\TeamTEAM\DBAndServiceLayer\MediaDAL\obj\Debug\MediaDAL.pdb
+C:\Users\Lawrence Douglas\source\repos\PolyWave Site\PolyWave\MediaDAL\bin\Debug\MediaDAL.dll.config
+C:\Users\Lawrence Douglas\source\repos\PolyWave Site\PolyWave\MediaDAL\bin\Debug\MediaDAL.dll
+C:\Users\Lawrence Douglas\source\repos\PolyWave Site\PolyWave\MediaDAL\bin\Debug\MediaDAL.pdb
+C:\Users\Lawrence Douglas\source\repos\PolyWave Site\PolyWave\MediaDAL\bin\Debug\EntityFramework.dll
+C:\Users\Lawrence Douglas\source\repos\PolyWave Site\PolyWave\MediaDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lawrence Douglas\source\repos\PolyWave Site\PolyWave\MediaDAL\bin\Debug\EntityFramework.xml
+C:\Users\Lawrence Douglas\source\repos\PolyWave Site\PolyWave\MediaDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lawrence Douglas\source\repos\PolyWave Site\PolyWave\MediaDAL\obj\Debug\MediaDAL.csprojResolveAssemblyReference.cache
+C:\Users\Lawrence Douglas\source\repos\PolyWave Site\PolyWave\MediaDAL\obj\Debug\MediaDAL.csproj.CoreCompileInputs.cache
+C:\Users\Lawrence Douglas\source\repos\PolyWave Site\PolyWave\MediaDAL\obj\Debug\MediaDAL.dll
+C:\Users\Lawrence Douglas\source\repos\PolyWave Site\PolyWave\MediaDAL\obj\Debug\MediaDAL.pdb

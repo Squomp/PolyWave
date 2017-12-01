@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Style.css" rel="stylesheet"/>
+    @RenderSection("link")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-collapse">
+                  <img src="~/Images/PolyWave.svg"/>
+                  <ul class="navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Categories", "Categories", "Home")</li>
+                    <li>@Html.ActionLink("Type", "Type", "Home")</li>
+                    <li>@Html.Partial("_LoginPartial")</li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-content">
+        @RenderBody()
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; @DateTime.Now.Year - PolyWave inc.</p>
+        </div>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
