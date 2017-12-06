@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2005
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolyWave", "PolyWave\PolyWave.csproj", "{4EF73FD6-CFE5-4CDD-BB71-592FF3503AB5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolyWave.Tests", "PolyWave.Tests\PolyWave.Tests.csproj", "{180E2570-BCFC-49CE-BA34-3E61B76DE97D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaServiceLib", "MediaServiceLib\MediaServiceLib.csproj", "{79ADADA5-27AA-495A-860A-355B7109AA51}"
 EndProject
@@ -21,10 +19,6 @@ Global
 		{4EF73FD6-CFE5-4CDD-BB71-592FF3503AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EF73FD6-CFE5-4CDD-BB71-592FF3503AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EF73FD6-CFE5-4CDD-BB71-592FF3503AB5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{180E2570-BCFC-49CE-BA34-3E61B76DE97D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{180E2570-BCFC-49CE-BA34-3E61B76DE97D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{180E2570-BCFC-49CE-BA34-3E61B76DE97D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{180E2570-BCFC-49CE-BA34-3E61B76DE97D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{79ADADA5-27AA-495A-860A-355B7109AA51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{79ADADA5-27AA-495A-860A-355B7109AA51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79ADADA5-27AA-495A-860A-355B7109AA51}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -19,3 +19,12 @@ C:\Users\Lawrence Douglas\source\repos\PolyWave Site\PolyWave\MediaDAL\obj\Debug
 C:\Users\Lawrence Douglas\source\repos\PolyWave Site\PolyWave\MediaDAL\obj\Debug\MediaDAL.csproj.CoreCompileInputs.cache
 C:\Users\Lawrence Douglas\source\repos\PolyWave Site\PolyWave\MediaDAL\obj\Debug\MediaDAL.dll
 C:\Users\Lawrence Douglas\source\repos\PolyWave Site\PolyWave\MediaDAL\obj\Debug\MediaDAL.pdb
+C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\MediaDAL\bin\Debug\MediaDAL.dll.config
+C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\MediaDAL\bin\Debug\MediaDAL.dll
+C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\MediaDAL\bin\Debug\MediaDAL.pdb
+C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\MediaDAL\bin\Debug\EntityFramework.dll
+C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\MediaDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\MediaDAL\bin\Debug\EntityFramework.xml
+C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\MediaDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\MediaDAL\obj\Debug\MediaDAL.dll
+C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\MediaDAL\obj\Debug\MediaDAL.pdb

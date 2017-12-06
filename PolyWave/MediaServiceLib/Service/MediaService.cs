@@ -41,12 +41,12 @@ namespace MediaServiceLib.Service
             return GetAllMedia().MediaList.Where(x => x.Id == id).First();
         }
 
-        public MediaListModel GetMediaByCategory(MediaModel category)
+        public MediaListModel GetMediaByCategory(MediaCategory category)
         {
             MediaListModel newModel = new MediaListModel();
             using (var db = new MediaEntities())
             {
-                var query = db.Media.Where(x => x.Category == category.Category.ToString());
+                var query = db.Media.Where(x => x.Category == category.ToString());
 
                 var mediaSearch = query.ToList();
 
@@ -67,12 +67,12 @@ namespace MediaServiceLib.Service
             return newModel;
         }
 
-        public MediaListModel GetMediaByType(MediaModel type)
+        public MediaListModel GetMediaByType(MediaType type)
         {
             MediaListModel newModel = new MediaListModel();
             using (var db = new MediaEntities())
             {
-                var query = db.Media.Where(x => x.Type == type.Type.ToString());
+                var query = db.Media.Where(x => x.Type == type.ToString());
 
                 var mediaSearch = query.ToList();
 
@@ -91,6 +91,16 @@ namespace MediaServiceLib.Service
             }
 
             return newModel;
+        }
+
+        public MediaListModel GetMediaByCategory(MediaModel model)
+        {
+            throw new NotImplementedException();
+        }
+
+        public MediaListModel GetMediaByType(MediaModel model)
+        {
+            throw new NotImplementedException();
         }
     }
 }
