@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title</title>
     <link href="~/Content/Style.css" rel="stylesheet"/>
     @RenderSection("link")
     @Scripts.Render("~/bundles/modernizr")
@@ -17,7 +17,7 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Categories", "Categories", "Home")</li>
                     <li>@Html.ActionLink("Type", "Type", "Home")</li>
-                    <li>@Html.Partial("_LoginPartial")</li>
+                    @*<li>@Html.Partial("_LoginPartial")</li>*@
                   </ul>
                 </div>
             </div>
