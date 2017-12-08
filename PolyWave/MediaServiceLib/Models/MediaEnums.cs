@@ -13,6 +13,6 @@ namespace MediaServiceLib.Models
 
     public enum MediaCategory
     {
-        Funny, News, Sports
+        Funny, News, Sports, Animal, Gaming, Music, NSFW, Tv, Anime, Movies
     }
 }
