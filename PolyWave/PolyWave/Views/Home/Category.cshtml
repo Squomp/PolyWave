@@ -1,0 +1,11 @@
+﻿@model MediaServiceLib.Models.MediaListModel
+
+@{
+    ViewBag.Title = "Category";
+}
+
+@foreach (var media in Model.MediaList)
+{
+    @Html.Partial("_CategoryLayout", media);
+}
+

@@ -1,0 +1,54 @@
+﻿@model MediaServiceLib.Models.MediaModel
+
+@section link {
+    <link href="~/Content/Content.css" rel="stylesheet" />
+}
+
+<h1 class="title">
+    @Model.Type
+</h1>
+
+<div class="content-body">
+    @if (Model.Type == MediaServiceLib.Models.MediaType.Video)
+    {
+        @Model.Author
+        <br />
+        @Model.Caption
+        <br />
+        @Model.Description
+    }
+
+    else if (Model.Type == MediaServiceLib.Models.MediaType.Gif)
+    {
+        @Model.Author
+        <br />
+        @Model.Caption
+        <br />
+        <img src="~/Media/@Url.Content(Model.Path)" />
+        <br />
+        @Model.Description
+    }
+
+    else if (Model.Type == MediaServiceLib.Models.MediaType.Image)
+    {
+        @Model.Author
+        <br />
+        @Model.Caption
+        <br />
+        <img src="~/Media/@Url.Content(Model.Path)" />
+        <br />
+        @Model.Description
+    }
+    else if (Model.Type == MediaServiceLib.Models.MediaType.Audio)
+    {
+        @Model.Author
+        <br />
+        @Model.Caption
+        <br />
+        <audio class="audios" controls>
+            <source src="~/Media/@Url.Content(Model.Path)" type="audio/mp3" />
+        </audio>
+        <br />
+        @Model.Description
+    }
+</div>
