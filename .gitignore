@@ -2,6 +2,7 @@
 *.d
 */packages
 *.mp4
+*.suo
 
 # Object files
 *.o
