@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MediaServiceLib.Service
 {
-    public class MediaService : IMediaService
+    public class MediaService
     {
         public MediaListModel GetAllMedia()
         {
@@ -41,12 +41,12 @@ namespace MediaServiceLib.Service
             return GetAllMedia().MediaList.Where(x => x.Id == id).First();
         }
 
-        public MediaListModel GetMediaByCategory(MediaCategory category)
+        public MediaListModel GetMediaByCategory(string category)
         {
             MediaListModel newModel = new MediaListModel();
             using (var db = new MediaEntities())
             {
-                var query = db.Media.Where(x => x.Category == category.ToString());
+                var query = db.Media.Where(x => x.Category == category);
 
                 var mediaSearch = query.ToList();
 
@@ -59,7 +59,9 @@ namespace MediaServiceLib.Service
                             Author = media.Author,
                             Path = media.Path,
                             Caption = media.Caption,
-                            Description = media.Description
+                            Description = media.Description,
+                            Category = (MediaCategory)Enum.Parse(typeof(MediaCategory), media.Category),
+                            Type = (MediaType)Enum.Parse(typeof(MediaType), media.Type)
                         });
                 });
             }
@@ -67,12 +69,12 @@ namespace MediaServiceLib.Service
             return newModel;
         }
 
-        public MediaListModel GetMediaByType(MediaType type)
+        public MediaListModel GetMediaByType(string type)
         {
             MediaListModel newModel = new MediaListModel();
             using (var db = new MediaEntities())
             {
-                var query = db.Media.Where(x => x.Type == type.ToString());
+                var query = db.Media.Where(x => x.Type == type);
 
                 var mediaSearch = query.ToList();
 
@@ -85,22 +87,14 @@ namespace MediaServiceLib.Service
                             Author = media.Author,
                             Path = media.Path,
                             Caption = media.Caption,
-                            Description = media.Description
+                            Description = media.Description,
+                            Category = (MediaCategory)Enum.Parse(typeof(MediaCategory), media.Category),
+                            Type = (MediaType)Enum.Parse(typeof(MediaType), media.Type)
                         });
                 });
             }
 
             return newModel;
-        }
-
-        public MediaListModel GetMediaByCategory(MediaModel model)
-        {
-            throw new NotImplementedException();
-        }
-
-        public MediaListModel GetMediaByType(MediaModel model)
-        {
-            throw new NotImplementedException();
         }
     }
 }

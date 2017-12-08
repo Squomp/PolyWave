@@ -1,462 +1,465 @@
-﻿@model MediaServiceLib.Models.MediaModel
+﻿@model MediaServiceLib.Models.MediaListModel
 
 @section link {
     <link href="~/Content/Content.css" rel="stylesheet" />
 }
 
 <h1 class="title">
-    @Model.Category
+    @Model.MediaList[0].Category
 </h1>
 
+@for (int i = 0; i < Model.MediaList.Count; i++)
+{
 <div class="content-body">
-    @if (Model.Category == MediaServiceLib.Models.MediaCategory.Funny)
+    @if (Model.MediaList[i].Category == MediaServiceLib.Models.MediaCategory.Funny)
     {
-        if (Model.Type == MediaServiceLib.Models.MediaType.Video)
+        if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Video)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
 
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Gif)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Gif)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            <img src="@Url.Content(Model.Path)" />
+            <img src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" />
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
 
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Image)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Image)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            <img src="@Url.Content(Model.Path)" />
+            <img src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" />
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Audio)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Audio)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
             <audio class="audios" controls>
-                <source src="@Url.Content(Model.Path)" type="audio/mp3" />
+                <source src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" type="audio/mp3" />
             </audio>
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
     }
-    else if (Model.Category == MediaServiceLib.Models.MediaCategory.Animal)
+    else if (Model.MediaList[i].Category == MediaServiceLib.Models.MediaCategory.Animals)
     {
-        if (Model.Type == MediaServiceLib.Models.MediaType.Video)
+        if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Video)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
 
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Gif)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Gif)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            <img src="@Url.Content(Model.Path)" />
+            <img src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" />
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
 
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Image)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Image)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            <img src="@Url.Content(Model.Path)" />
+            <img src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" />
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Audio)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Audio)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
             <audio class="audios" controls>
-                <source src="@Url.Content(Model.Path)" type="audio/mp3" />
+                <source src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" type="audio/mp3" />
             </audio>
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
     }
-    else if (Model.Category == MediaServiceLib.Models.MediaCategory.Anime)
+    else if (Model.MediaList[i].Category == MediaServiceLib.Models.MediaCategory.Anime)
     {
-        if (Model.Type == MediaServiceLib.Models.MediaType.Video)
+        if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Video)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
 
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Gif)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Gif)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            <img src="@Url.Content(Model.Path)" />
+            <img src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" />
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
 
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Image)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Image)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            <img src="@Url.Content(Model.Path)" />
+            <img src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" />
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Audio)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Audio)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
             <audio class="audios" controls>
-                <source src="@Url.Content(Model.Path)" type="audio/mp3" />
+                <source src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" type="audio/mp3" />
             </audio>
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
     }
-    else if (Model.Category == MediaServiceLib.Models.MediaCategory.Gaming)
+    else if (Model.MediaList[i].Category == MediaServiceLib.Models.MediaCategory.Gaming)
     {
-        if (Model.Type == MediaServiceLib.Models.MediaType.Video)
+        if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Video)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
 
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Gif)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Gif)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            <img src="@Url.Content(Model.Path)" />
+            <img src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" />
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
 
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Image)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Image)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            <img src="@Url.Content(Model.Path)" />
+            <img src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" />
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Audio)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Audio)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
             <audio class="audios" controls>
-                <source src="@Url.Content(Model.Path)" type="audio/mp3" />
+                <source src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" type="audio/mp3" />
             </audio>
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
     }
-    else if (Model.Category == MediaServiceLib.Models.MediaCategory.Movies)
+    else if (Model.MediaList[i].Category == MediaServiceLib.Models.MediaCategory.Movies)
     {
-        if (Model.Type == MediaServiceLib.Models.MediaType.Video)
+        if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Video)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
 
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Gif)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Gif)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            <img src="@Url.Content(Model.Path)" />
+            <img src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" />
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
 
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Image)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Image)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            <img src="@Url.Content(Model.Path)" />
+            <img src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" />
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Audio)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Audio)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
             <audio class="audios" controls>
-                <source src="@Url.Content(Model.Path)" type="audio/mp3" />
+                <source src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" type="audio/mp3" />
             </audio>
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
     }
-    else if (Model.Category == MediaServiceLib.Models.MediaCategory.Music)
+    else if (Model.MediaList[i].Category == MediaServiceLib.Models.MediaCategory.Music)
     {
-        if (Model.Type == MediaServiceLib.Models.MediaType.Video)
+        if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Video)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
 
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Gif)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Gif)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            <img src="@Url.Content(Model.Path)" />
+            <img src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" />
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
 
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Image)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Image)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            <img src="@Url.Content(Model.Path)" />
+            <img src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" />
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Audio)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Audio)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
             <audio class="audios" controls>
-                <source src="@Url.Content(Model.Path)" type="audio/mp3" />
+                <source src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" type="audio/mp3" />
             </audio>
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
     }
-    else if (Model.Category == MediaServiceLib.Models.MediaCategory.News)
+    else if (Model.MediaList[i].Category == MediaServiceLib.Models.MediaCategory.News)
     {
-        if (Model.Type == MediaServiceLib.Models.MediaType.Video)
+        if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Video)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
 
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Gif)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Gif)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            <img src="@Url.Content(Model.Path)" />
+            <img src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" />
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
 
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Image)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Image)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            <img src="@Url.Content(Model.Path)" />
+            <img src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" />
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Audio)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Audio)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
             <audio class="audios" controls>
-                <source src="@Url.Content(Model.Path)" type="audio/mp3" />
+                <source src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" type="audio/mp3" />
             </audio>
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
     }
-    else if (Model.Category == MediaServiceLib.Models.MediaCategory.NSFW)
+    else if (Model.MediaList[i].Category == MediaServiceLib.Models.MediaCategory.NSFW)
     {
-        if (Model.Type == MediaServiceLib.Models.MediaType.Video)
+        if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Video)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
 
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Gif)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Gif)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            <img src="@Url.Content(Model.Path)" />
+            <img src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" />
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
 
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Image)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Image)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            <img src="@Url.Content(Model.Path)" />
+            <img src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" />
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Audio)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Audio)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
             <audio class="audios" controls>
-                <source src="@Url.Content(Model.Path)" type="audio/mp3" />
+                <source src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" type="audio/mp3" />
             </audio>
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
     }
-    else if (Model.Category == MediaServiceLib.Models.MediaCategory.Sports)
+    else if (Model.MediaList[i].Category == MediaServiceLib.Models.MediaCategory.Sports)
     {
-        if (Model.Type == MediaServiceLib.Models.MediaType.Video)
+        if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Video)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
 
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Gif)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Gif)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            <img src="@Url.Content(Model.Path)" />
+            <img src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" />
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
 
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Image)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Image)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            <img src="@Url.Content(Model.Path)" />
+            <img src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" />
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Audio)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Audio)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
             <audio class="audios" controls>
-                <source src="@Url.Content(Model.Path)" type="audio/mp3" />
+                <source src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" type="audio/mp3" />
             </audio>
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
     }
-    else if (Model.Category == MediaServiceLib.Models.MediaCategory.TV)
+    else if (Model.MediaList[i].Category == MediaServiceLib.Models.MediaCategory.Tv)
     {
-        if (Model.Type == MediaServiceLib.Models.MediaType.Video)
+        if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Video)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
 
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Gif)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Gif)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            <img src="@Url.Content(Model.Path)" />
+            <img src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" />
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
 
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Image)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Image)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
-            <img src="@Url.Content(Model.Path)" />
+            <img src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" />
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
-        else if (Model.Type == MediaServiceLib.Models.MediaType.Audio)
+        else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Audio)
         {
-            @Model.Author
+            @Model.MediaList[i].Author
             <br />
-            @Model.Caption
+            @Model.MediaList[i].Caption
             <br />
             <audio class="audios" controls>
-                <source src="@Url.Content(Model.Path)" type="audio/mp3" />
+                <source src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" type="audio/mp3" />
             </audio>
             <br />
-            @Model.Description
+            @Model.MediaList[i].Description
         }
     }
 </div>
+}

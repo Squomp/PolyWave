@@ -170,6 +170,7 @@ C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\PolyWa
 C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\PolyWave\bin\System.Web.WebPages.Deployment.dll
 C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\PolyWave\bin\System.Web.WebPages.dll
 C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\PolyWave\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\PolyWave\bin\WebGrease.dll
 C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\PolyWave\bin\MediaDAL.pdb
 C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\PolyWave\bin\MediaDAL.dll.config
 C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\PolyWave\bin\MediaServiceLib.pdb
@@ -188,8 +189,8 @@ C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\PolyWa
 C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\PolyWave\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\PolyWave\bin\Newtonsoft.Json.xml
 C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\PolyWave\bin\System.Web.Mvc.xml
-C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\PolyWave\bin\System.Web.Helpers.xml
 C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\PolyWave\bin\System.Web.Optimization.xml
+C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\PolyWave\bin\System.Web.Helpers.xml
 C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\PolyWave\bin\System.Web.Razor.xml
 C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\PolyWave\bin\System.Web.WebPages.xml
 C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\PolyWave\bin\System.Web.WebPages.Deployment.xml
@@ -197,4 +198,3 @@ C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\PolyWa
 C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\PolyWave\obj\Debug\PolyWave.csprojResolveAssemblyReference.cache
 C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\PolyWave\obj\Debug\PolyWave.dll
 C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\PolyWave\obj\Debug\PolyWave.pdb
-C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\PolyWave\bin\WebGrease.dll

@@ -4,8 +4,6 @@
     ViewBag.Title = "Category";
 }
 
-@foreach (var media in Model.MediaList)
-{
-    @Html.Partial("_CategoryLayout", media);
-}
+    @Html.Partial("_CategoryLayout", Model);
+
 

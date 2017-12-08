@@ -1,54 +1,57 @@
-﻿@model MediaServiceLib.Models.MediaModel
+﻿@model MediaServiceLib.Models.MediaListModel
 
 @section link {
     <link href="~/Content/Content.css" rel="stylesheet" />
 }
 
 <h1 class="title">
-    @Model.Type
+    @Model.MediaList[0].Type
 </h1>
 
+@for (int i = 0; i < Model.MediaList.Count; i++)
+{
 <div class="content-body">
-    @if (Model.Type == MediaServiceLib.Models.MediaType.Video)
+    @if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Video)
     {
-        @Model.Author
+        @Model.MediaList[i].Author
         <br />
-        @Model.Caption
+        @Model.MediaList[i].Caption
         <br />
-        @Model.Description
+        @Model.MediaList[i].Description
     }
 
-    else if (Model.Type == MediaServiceLib.Models.MediaType.Gif)
+    else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Gif)
     {
-        @Model.Author
+        @Model.MediaList[i].Author
         <br />
-        @Model.Caption
+        @Model.MediaList[i].Caption
         <br />
-        <img src="@Url.Content(Model.Path)" />
+        <img src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" />
         <br />
-        @Model.Description
+        @Model.MediaList[i].Description
     }
 
-    else if (Model.Type == MediaServiceLib.Models.MediaType.Image)
+    else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Image)
     {
-        @Model.Author
+        @Model.MediaList[i].Author
         <br />
-        @Model.Caption
+        @Model.MediaList[i].Caption
         <br />
-        <img src="@Url.Content(Model.Path)" />
+        <img src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" />
         <br />
-        @Model.Description
+        @Model.MediaList[i].Description
     }
-    else if (Model.Type == MediaServiceLib.Models.MediaType.Audio)
+    else if (Model.MediaList[i].Type == MediaServiceLib.Models.MediaType.Audio)
     {
-        @Model.Author
+        @Model.MediaList[i].Author
         <br />
-        @Model.Caption
+        @Model.MediaList[i].Caption
         <br />
         <audio class="audios" controls>
-            <source src="@Url.Content(Model.Path)" type="audio/mp3" />
+            <source src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" type="audio/mp3" />
         </audio>
         <br />
-        @Model.Description
+        @Model.MediaList[i].Description
     }
 </div>
+}
