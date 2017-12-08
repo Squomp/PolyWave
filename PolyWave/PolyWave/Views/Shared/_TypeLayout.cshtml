@@ -17,6 +17,11 @@
         <br />
         @Model.MediaList[i].Caption
         <br />
+        <video controls="controls" class="video">
+            <source src="@Url.Content(String.Format("{0}", Model.MediaList[i].Path))" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <br />
         @Model.MediaList[i].Description
     }
 
