@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Mitch\Documents\School\Team TEAM - Web Project\PolyWave\PolyWave\MediaDAL\MediaModel.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Lawrence Douglas\source\repos\PolyWave Site\PolyWave\PolyWave\MediaDAL\MediaModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

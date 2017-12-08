@@ -10,7 +10,7 @@ namespace PolyWave.Controllers
 {
     public class HomeController : Controller
     {
-        IMediaService service = new MediaService();
+        MediaService service = new MediaService();
 
         public ActionResult Index()
         {
@@ -22,7 +22,7 @@ namespace PolyWave.Controllers
             return View();
         }
 
-        public ActionResult Category(MediaModel category)
+        public ActionResult Category(string category)
         {
             MediaListModel model = service.GetMediaByCategory(category);
             return View(model);
@@ -33,7 +33,7 @@ namespace PolyWave.Controllers
         {
             return View();
         }
-        public ActionResult mediaType(MediaModel type)
+        public ActionResult mediaType(string type)
         {
             MediaListModel model = service.GetMediaByType(type);
             return View(model);
