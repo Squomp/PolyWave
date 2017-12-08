@@ -1,6 +1,7 @@
 # Prerequisites
 *.d
 */packages
+*.mp4
 
 # Object files
 *.o
